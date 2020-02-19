@@ -2,13 +2,13 @@
 <html>
   <body>
       <script>
-        var a = 0; var b = 0;
-        while(a * b <= 0 || Number.isNaN(a) == true || Number.isNaN(b) == true){
-          a = parseInt(prompt('Введите значение переменной a:'));
-          b = parseInt(prompt('Введите значение переменной b:'));
-        }
-         var res = (Math.sqrt(a * b)) == 4 ? 'Равно' : (Math.sqrt(a * b))<4 ? 'Мало' : 'Много';
-         alert(res);
+        do{
+       var a = parseInt(prompt('Введите значение переменной a: ', ' '));
+	   var b = parseInt(prompt('Введите значение переменной b: ', ' '));
+       }while(a * b < 0 || Number.isNaN(a) == true || Number.isNaN(b) == true);
+     var res = (Math.sqrt(a * b)) >= 4 ? 'Много' :
+               (Math.sqrt(a*b))<4 ? 'Мало' : 'Ошибка!';
+	           alert (res); 
       </script>
   </body>
 </html>
