@@ -4,10 +4,10 @@
 	<script>
 		var a = prompt('Введите значение для переменной a');
 		var b = prompt('Введите значение для переменной b');
-		var a2 = Number(a);
-		var b2 = Number(b);
-		var res = (a2 == b2) ? 'Значения равны' : 'Значения не равны';
-		alert(res);
+		var res = ((a == null || b == null)) ? 'Введите значения!' :
+                (a == b) ? 'Значения равны' :
+                'Значения не равны'; 
+                alert (res);
 	</script>
 </body>
 </html>
